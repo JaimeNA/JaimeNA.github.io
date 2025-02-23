@@ -1,0 +1,192 @@
+/* Font */
+@font-face {
+    font-family: 'retro_gamingregular';
+    src: url('../fonts/retro_gaming-webfont.woff2') format('woff2'),
+         url('../fonts/retro_gaming-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+}
+
+/* Body */
+body {
+    font-family: "retro_gamingregular";
+    font-size: 16pt;
+    color: #bec5d3;
+    background-color: #242935;
+}
+
+h3 {
+  color: #edf0f5;
+}
+
+hr {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #edf0f5;
+}
+
+/* HEADER
+-------------------------------------------------- */
+
+/* TItle */
+#title {
+    text-align: center;
+    background-color: #343a40;
+    color: #FFBF00;
+    margin: 0;
+    padding: 0;
+}
+
+/*== Main ==*/
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+#index_button {
+    background-color: #606060;
+    font-family: "retro_gamingregular";
+    font-size: 14pt;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    display: none;
+}
+
+#index {
+    background-color: #808080;
+    text-align: left;
+    text-decoration: none;
+    z-index: 2;
+    position: fixed;
+    width: 200px;
+}
+
+#index_list{
+    text-decoration: none;
+    display: block;
+}
+
+#index_list ul{
+    list-style: none;
+}
+
+li {
+  padding-bottom: 15%;
+}
+
+a:hover{
+    color: #e3af12;
+}
+
+#terminal {
+    flex: 30%;
+}
+
+#main_content {
+    margin-left: 230px;
+    margin-right: 5%;
+    flex: 90%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/*== Social Categories ==*/
+#social-categories {
+    display: flex;
+    flex-direction: row;
+}
+
+#social-categories img {
+    height: auto;
+    max-width: 50%;
+}
+
+
+.social {
+    flex: 30%;
+    text-align: center;
+    align-content: center;
+    padding: 3%;
+}
+
+.social p {
+    text-align: left;
+}
+
+/* PROJECTS
+-------------------------------------------------- */
+
+.project-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-content img{
+    flex: 25%;
+    object-fit: cover;
+    max-width: 25%;
+    padding-right: 3%;
+}
+
+.project-content a{
+    text-decoration: underline;
+}
+
+.text-muted {
+    color: #e3af12;
+}
+
+.return-link {
+    color: #e3af12;
+}
+/* FOOTER CONTENT
+-------------------------------------------------- */
+
+footer {
+    color: #bec5d3;
+    text-align: center;
+    padding: 10%;
+}
+
+@media screen and (max-width: 1024px) {
+    .active, #index_button:hover {
+        background-color: #707070;
+    }
+
+    #index_button {
+        display: block;
+    }
+
+    #img {
+        max-width: 20%;
+    }
+
+    #index {
+        z-index: 2;
+    }
+
+    #index_list {
+        display: none;
+    }
+
+    #main_content {
+        padding-top: 30px;
+        margin: 5%;
+    }
+
+    #social-categories {
+        flex-direction: column;
+    }
+}
+
+/* TODO: Fix index disappearing when changing scaling */
