@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+	<title>Nyxleaf</title>
+	<description>Here is where my rambles of life go after I'm done</description>
+	<link>{not done yet}</link>
+	<lastBuildDate>
+		{Date and time in RFC 2822 format}
+	</lastBuildDate>
+	<ttl>60</ttl>
+
+	<item>
+		<title>{Article Title}</title>
+		<description>
+		{A short description or preview of the article}
+		</description>
+		<link>{Link to the the web page of the article}</link>
+		<pubDate>
+		{Time and date in RFC 2822 format}
+		</pubDate>
+	</item>
+
+
+</channel>
+</rss>
