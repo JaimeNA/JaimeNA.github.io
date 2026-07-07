@@ -88,12 +88,12 @@ a:hover{
     background-color: #201A23;
 }
 
-.main-aside-left {
+.aside-left {
     flex: 20%;
 
 }
 
-.main-aside-left div{
+.aside-left div{
     background-color: #2E2532;
     padding: 5%;
     margin-bottom: 5%;
@@ -116,11 +116,11 @@ a:hover{
     border-radius: 0.2em;
 }
 
-.main-aside-right {
+.aside-right {
     flex: 20%;
 }
 
-.main-aside-right div{
+.aside-right div{
     background-color: #2E2532;
     padding: 5%;
     margin-bottom: 5%;
