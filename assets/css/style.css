@@ -9,10 +9,13 @@
 
 /* Body */
 body {
+    background-image: url("../images/wall.jpg");
+    background-repeat: repeat;
+
     font-family: "vt323-regular";
     font-size: 18pt;
-    color: #bec5d3;
-    background-color: #515B3A;
+    color: #f7f7f7;
+    background-color: #207383;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -36,7 +39,7 @@ a {
 /* TItle */
 #title {
     text-align: center;
-    background-color: #2E2532;
+    background-color: #27393b;
     color: #FFBF00;
 }
 
@@ -48,7 +51,7 @@ main {
 }
 
 #index_button {
-    background-color: #606060;
+    background-color: #1b1b1b;
     font-family: "vt323-regular";
     font-size: 14pt;
     cursor: pointer;
@@ -73,10 +76,10 @@ a:hover{
 .main-content {
     border-radius: 0.2em;
 
-    border-top: 5px solid #554555;
-    border-left: 5px solid #554555;
-    border-right: 5px solid #1C181D;
-    border-bottom: 5px solid #1C181D;
+    border-top: 5px solid #33464a;
+    border-left: 5px solid #33464a;
+    border-right: 5px solid #1e2a31;
+    border-bottom: 5px solid #1e2a31;
     
 	margin: 0% 1% 0% 1%;
 	padding: 1%;
@@ -85,7 +88,7 @@ a:hover{
 
     display: flex;
     flex-direction: column;
-    background-color: #201A23;
+    background-color: #27393b;
 }
 
 .aside-left {
@@ -94,7 +97,12 @@ a:hover{
 }
 
 .aside-left div{
-    background-color: #2E2532;
+    border-top: 5px solid #33464a;
+    border-left: 5px solid #33464a;
+    border-right: 5px solid #1e2a31;
+    border-bottom: 5px solid #1e2a31;
+
+    background-color: #27393b;
     padding: 5%;
     margin-bottom: 5%;
     border-radius: 0.2em;
@@ -121,7 +129,12 @@ a:hover{
 }
 
 .aside-right div{
-    background-color: #2E2532;
+    border-top: 5px solid #33464a;
+    border-left: 5px solid #33464a;
+    border-right: 5px solid #1e2a31;
+    border-bottom: 5px solid #1e2a31;
+
+    background-color: #27393b;
     padding: 5%;
     margin-bottom: 5%;
     border-radius: 0.2em;
