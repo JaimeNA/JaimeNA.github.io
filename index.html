@@ -18,7 +18,7 @@
     <script src="./assets/js/terminal.js"></script>
 
     
-    <title>Jaime Nazar</title>
+    <title>Jasha's homepage</title>
     <link rel="icon" href="./assets/images/logo.png">
     <link href="./assets/css/style.css" rel="stylesheet"/>
 </head>
@@ -30,78 +30,107 @@
 
     <main>
 
-        <div id="index">
-            <button type="button" id="index_button">Index</button>
+        <aside class="aside-left">
+            <div class="main-update-log">
+                <h2>Update log...</h2>
 
-            <div id="index_list">
-                <ul>
-                    <li><a href="#terminal">Terminal</a></li>
-                    <li><a href="#about">Acerca de mi</a></li>
-                    <li><a href="#socials">Redes sociales</a></li>
-                    <li><a href="projects.html">Proyectos</a></li>
-                </ul>   
+                <div class="main-updates">
+                    <p class="update">
+                        <b>June 24, 2026</b> 
+                        - Website redesign
+                    </p>
+
+                    <p class="update">
+                        <b>December 01, 2022</b> 
+                        - Created this website as a side project 
+                    </p>
+                </div>
             </div>
-        </div>
+            
+            <div class="main-badges">
+                <h2>Badges</h2>
+                <img src="./assets/images/buttons/ilikecomputer.png" alt="I like computer button"/>
+                <img src="./assets/images/buttons/dontfeedai.png" alt="Don't feed AI button"/>
+            </div>
+        </aside>
 
-        <div id="main_content">
+        <section class="main-content">
 
-            <p> Hola (^-^)/ . Esta es mi pagina web, la hice para aprender.</p>
-            <div id="terminal"></div>
+            <p> Hi (^-^)/ . This is my little corner of the internet, feel free to stay as long as you wish to.</p>
 
             <hr>
 
-            <div id="about">
-                <h3>ACERCA DE MI</h3>
-                <p>Actualmente estudiante de Ingeniería Informática, me gusta trabajar con computadoras, construir aviones RC, cocinar y leer. 
-                    Desarrollador junior principiante en C/C++, Java, Javascript, Python, Rust, HTML y CSS. Pero lo más importante es siempor estar 
-                    buscando cosas nuevas para aprender y experimentar.</pa>
+            <div class="main-about">
+                <h2>About me</h2>
+                <img src="./assets/images/me.jpg" alt="Profile picture" />
+                <p>
+                Currently a Computer Engineering student, I like working with computers, coding, ham radio and reading. 
+                Self-taught junior developer on C/C++, Java, Javascript, Python, Rust, HTML and CSS. I mainly enjoy tinkering with low level stuff. 
+                Furthermore, I'm always looking for new things to learn and experience.
+                </br>
+                This website was designed with simplicity in mind, that is, I wanted it to be as simple as posible whilst being 
+                user friendly. That's why it's mostly HTML and CSS, simple. 
+                </p>
             </div>
 
             <hr>
-
-            <div id="socials">
-                <h3>REDES SOCIALES</h3>
+            
+             <div id="main-socials">
+                <h2>Socials</h2>
 
                 <div id="social-categories">
                     <div class="social">
                         <h4>LinkedIn</h4>
-                        <a href="https://www.linkedin.com/in/jaime-nazar-anchorena-4a3093138/"><img src="./assets/images/linkedin.png" alt="LinkedIn"></a>
+                        <a href="https://www.linkedin.com/in/jaime-nazar-anchorena-4a3093138/"><img src="../assets/images/linkedin.png" alt="LinkedIn"></a>
 
-                        <p>Pagina de LinkedIn donde subo cosas relacionadas a educacion y trabajo.</p>
+                        <p>LinkedIn page were I upload my job related experience and education.</p>
                     </div>
 
                     <div class="social">
                         <h4>Github</h4>
-                        <a href="https://github.com/JaimeNA"><img src="./assets/images/github.png" alt="Github"></a>
+                        <a href="https://github.com/JaimeNA"><img src="../assets/images/github.png" alt="Github"></a>
                         
-                        <p>Pagina de Github donde subo mis projectos de programacion para poder ver mi progreso y logros.</p>
+                        <p>Github page were I upload my personal projects to keep a record of my progess and achievements.</p>
                     </div>
 
                     <div class="social">
                         <h4>Youtube</h4>
-                        <a href="https://www.youtube.com/@jawey1646"><img src="./assets/images/youtube.png" alt="Youtube"></a>
+                        <a href="https://www.youtube.com/@jawey1646"><img src="../assets/images/youtube.png" alt="Youtube"></a>
 
-                        <p>Canal de Youtube donde subo videos de aviones RC, impresión 3D, SDR, etc.</p>
+                        <p>Youtube channel where I upload videos about RC Airplanes, 3D printing, SDR, ect.</p>
                     </div>
                 </div>
             </div>
 
             <hr>
 
-            <div id="projects">
-                <h3>PROYECTOS</h3>
-                <p>No dudes en consultar mi pagina de <a class="return-link" href="projects.html">proyectos</a>, los projectos son principalmente de aviones RC, SDR, impresión 3D, robotica, ect. 
-                    Algunos van a tener un link a un video a youtube que hice acerca de esos.</p>
+            <div id="main-projects">
+                <h2>Projects</h2>
+                <p>Feel free to check out my <a class="return-link" href="projects.html">projects</a> page, 
+                those projects are mainly about RC, SDR, 3D printing, robotics, ect. Some have links to youtube 
+                videos I have made about those.</p>
             </div>
 
-        </div>
+        </section>
+
+        <aside class="aside-right">
+            <div class="index-list">
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="projects.html" title="image">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>   
+            </div>
+        </aside>
     </main>
 
     <!-- FOOTER -->
     <footer class="container">
       
-      <p class="float-right"><a href="#title">Volver a arriba</a></p>
-      <p>&copy; 2026 Jaime Nazar Anchorena - <a>nam.jaime@gmail.com</a></p>
+      <p class="float-right"><a href="#title">Go back up</a></p>
+      <p>&copy; 2022-20XX - Jaime Nazar Anchorena</a></p>
       
     </footer>
 

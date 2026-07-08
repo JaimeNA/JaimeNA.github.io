@@ -1,8 +1,7 @@
 /* Font */
 @font-face {
-    font-family: 'retro_gamingregular';
-    src: url('../fonts/retro_gaming-webfont.woff2') format('woff2'),
-         url('../fonts/retro_gaming-webfont.woff') format('woff');
+    font-family: 'vt323-regular';
+    src: url('../fonts/VT323-Regular.ttf');
     font-weight: normal;
     font-style: normal;
   
@@ -10,14 +9,19 @@
 
 /* Body */
 body {
-    font-family: "retro_gamingregular";
-    font-size: 16pt;
-    color: #bec5d3;
-    background-color: #242935;
+    background-image: url("../images/wall.jpg");
+    background-repeat: repeat;
+
+    font-family: "vt323-regular";
+    font-size: 18pt;
+    color: #f7f7f7;
+    background-color: #207383;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 h3 {
-  color: #edf0f5;
+    color: #edf0f5;
 }
 
 hr {
@@ -35,10 +39,8 @@ a {
 /* TItle */
 #title {
     text-align: center;
-    background-color: #343a40;
+    background-color: #27393b;
     color: #FFBF00;
-    margin: 0;
-    padding: 0;
 }
 
 /*== Main ==*/
@@ -49,8 +51,8 @@ main {
 }
 
 #index_button {
-    background-color: #606060;
-    font-family: "retro_gamingregular";
+    background-color: #1b1b1b;
+    font-family: "vt323-regular";
     font-size: 14pt;
     cursor: pointer;
     padding: 18px;
@@ -61,43 +63,94 @@ main {
     display: none;
 }
 
-#index {
-    background-color: #808080;
+aside {
     text-align: left;
     text-decoration: none;
-    z-index: 2;
-    position: fixed;
-    width: 200px;
-}
-
-#index_list{
-    text-decoration: none;
-    display: block;
-}
-
-#index_list ul{
-    list-style: none;
-}
-
-li {
-  padding-bottom: 15%;
+    color: #edf0f5;
 }
 
 a:hover{
     color: #e3af12;
 }
 
-#terminal {
-    flex: 30%;
-}
+.main-content {
+    border-radius: 0.2em;
 
-#main_content {
-    margin-left: 230px;
-    margin-right: 5%;
-    flex: 90%;
+    border-top: 5px solid #33464a;
+    border-left: 5px solid #33464a;
+    border-right: 5px solid #1e2a31;
+    border-bottom: 5px solid #1e2a31;
+    
+	margin: 0% 1% 0% 1%;
+	padding: 1%;
+
+    flex: 60%;
 
     display: flex;
     flex-direction: column;
+    background-color: #27393b;
+}
+
+.aside-left {
+    flex: 20%;
+
+}
+
+.aside-left div{
+    border-top: 5px solid #33464a;
+    border-left: 5px solid #33464a;
+    border-right: 5px solid #1e2a31;
+    border-bottom: 5px solid #1e2a31;
+
+    background-color: #27393b;
+    padding: 5%;
+    margin-bottom: 5%;
+    border-radius: 0.2em;
+
+}
+
+.main-updates {
+    height: 20%;
+    overflow: auto;
+}
+
+.main-about img{
+    margin-right: 5%;
+
+    width: 30%;
+    height: auto;
+
+    float: left;
+    border-radius: 0.2em;
+}
+
+.aside-right {
+    flex: 20%;
+}
+
+.aside-right div{
+    border-top: 5px solid #33464a;
+    border-left: 5px solid #33464a;
+    border-right: 5px solid #1e2a31;
+    border-bottom: 5px solid #1e2a31;
+
+    background-color: #27393b;
+    padding: 5%;
+    margin-bottom: 5%;
+    border-radius: 0.2em;
+}
+
+.index-list{
+    text-decoration: none;
+    display: block;
+}
+
+.index-list ul{
+    list-style: none;
+}
+
+li {
+  padding-bottom: 15%;
 }
 
 /*== Social Categories ==*/
@@ -189,4 +242,3 @@ footer {
     }
 }
 
-/* TODO: Fix index disappearing when changing scaling */

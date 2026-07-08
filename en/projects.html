@@ -8,7 +8,7 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="../assets/css/style.css">
 
-        <title>Jaime Nazar</title>
+        <title>Jasha's homepage</title>
         <link rel="icon" href="../assets/images/logo.png">
     </head>
 
@@ -19,117 +19,111 @@
     
         <!-- MAIN -->
         <main>
+            <aside class="aside-left">
+                <div>
+                    Nothing here, yet
+                </div>
+            </aside>
 
-            <div id="index">
-                <button type="button" id="index_button">Index</button>
-    
-                <div id="index_list">
+            <section class="main-content">
+
+                <div id="main_content">
+                    <div class="project" id="1">
+                        <h2 class="project-heading"><a href="projects/sequisat.html">Satellite trajectory with SGP 4. <span class="text-muted">Written in Rust.</span></a></h2>
+                        <div class="project-description">
+                            <p class="lead">Satellite trajectory propagation using the SGP 4 model for low earth orbits. It does so based on the TLEs provided.</p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="project" id="2">
+                        <h2 class="project-heading"><a href="projects/sequisat.html">Satellite Images. <span class="text-muted">With an RTL-SDR.</span></a></h2>
+
+                        <div class="project-description">
+                            <p class="lead">Satellite image received from Meteor M2-4 LRPT. This satellites transmit at 137.900MHz, I received the signal with a homemade QFH antenna and an RTL-SDR Blog V4.
+                                <a href="https://www.youtube.com/watch?v=qXWJL2wbTB0">Video</a>
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="project" id="3">
+                        <h2 class="project-heading"><a href="projects/sequisat.html">INTEL 4004 emulator. <span class="text-muted">Written in Rust.</span></a></h2>
+
+                        <div class="project-description">
+                            <p class="lead">INTEL 4004 emulator written in Rust. It's the first commercial microprocessor, it's a 4-bits CPU from 1971.</p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="project" id="4">
+                        <h2 class="project-heading"><a href="projects/sequisat.html">VICAR parser. <span class="text-muted">Written in C++.</span></a></h2>
+
+                        <div class="project-description">
+                            <p class="lead">VICAR NASA format for interplanetary missions parser. It outputs the raw data in the TIFF format. This formats was used in many missions such as the Voyager ones.</p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="project" id="5">
+                        <h2 class="project-heading"><a href="projects/sequisat.html">Sugar Rocket. <span class="text-muted">With Arduino.</span></a></h2>
+
+                        <div class="project-description">
+                            <p class="lead">Sugar rocket made at the start of 2021. The parachute ejection system is made with a servo that is activated by the Arduino.</p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="project" id="6">
+                        <h2 class="project-heading"><a href="projects/sequisat.html">Web server. <span class="text-muted">With recycled parts.</span></a></h2>
+
+                        <div class="project-description">
+                            <p class="lead">Linux based web server running Docker on Fedora 38. Used to host this website as well as other services such as jellyfin or nginx.
+                            <a href="https://www.youtube.com/watch?v=1L8abM76bG0">Video</a>
+                        </p>          
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="project" id="7">
+                        <h2 class="project-heading"><a href="projects/sequisat.html">Robot. <span class="text-muted">3D printed.</span></a></h2>
+
+                        <div class="project-description">
+                            <p class="lead">3D printed robot controlled by an arduino and moved by 8 servo motors. Use sensor in order not to crash into walls.
+                                <a href="https://www.youtube.com/watch?v=h_jftYQMekc">Video</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="project" id="8">
+                        <h2 class="project-heading"><a href="projects/sequisat.html">Fi-156 "Storch". <span class="text-muted">RC airplane.</span></a></h2>
+
+                        <div class="project-description">
+                            <p class="lead">6-channel airplane built with foamboard and hot glue. It uses a 1000Kv motor, MG90S servos and it weights around 800 grams.
+                                <a href="https://www.youtube.com/watch?v=Ifakn9rkLtQ">Video</a>
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+
+                </div>
+            </section>
+
+            <aside class="aside-right">
+                <div class="index-list">
+                    <h2>Menu</h2>
                     <ul>
-                        <li><a href="#1">Satellite trajectory</a></li>
-                        <li><a href="#2">Satellite Images</a></li>
-                        <li><a href="#3">Emulator</a></li>
-                        <li><a href="#4">VICAR</a></li>
-                        <li><a href="#5">Sugar Rocket</a></li>
-                        <li><a href="#6">Web server</a></li>
-                        <li><a href="#7">Robot</a></li>
-                        <li><a href="#8">Fi-156</a></li>
-                        <li><a class="return-link" href="index.html">Back</a></li>
+                        <li><a href="index.html">About Me</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
                     </ul>   
                 </div>
-            </div>
-    
-            <div id="main_content">
-				<div class="project" id="1">
-                    <h2 class="project-heading">Satellite trajectory with SGP 4. <span class="text-muted">Written in Rust.</span></h2>
+            </aside>
 
-                    <div class="project-content">
-                        <img class="project-image img-fluid mx-auto" src="./assets/images/sequisat.png" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                        <p class="lead">Satellite trajectory propagation using the SGP 4 model for low earth orbits. It does so based on the TLEs provided.</p>
-                    </div>
-                </div>
-                <hr>
-
-                <div class="project" id="2">
-                    <h2 class="project-heading">Satellite Images. <span class="text-muted">With an RTL-SDR.</span></h2>
-
-                    <div class="project-content">
-                        <img class="project-image img-fluid mx-auto" src="../assets/images/sdr.png" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                        <p class="lead">Satellite image received from Meteor M2-4 LRPT. This satellites transmit at 137.900MHz, I received the signal with a homemade QFH antenna and an RTL-SDR Blog V4.
-                            <a href="https://www.youtube.com/watch?v=qXWJL2wbTB0">Video</a>
-                        </p>
-                    </div>
-                </div>
-                <hr>
-
-                <div class="project" id="3">
-                    <h2 class="project-heading">INTEL 4004 emulator. <span class="text-muted">Written in Rust.</span></h2>
-
-                    <div class="project-content">
-                        <img class="project-image img-fluid mx-auto" src="../assets/images/emulator.png" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                        <p class="lead">INTEL 4004 emulator written in Rust. It's the first commercial microprocessor, it's a 4-bits CPU from 1971.</p>
-                    </div>
-                </div>
-                <hr>
-
-                <div class="project" id="4">
-                    <h2 class="project-heading">VICAR parser. <span class="text-muted">Written in C++.</span></h2>
-
-                    <div class="project-content">
-                        <img class="project-image img-fluid mx-auto" src="./assets/images/vicar.png" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                        <p class="lead">VICAR NASA format for interplanetary missions parser. It outputs the raw data in the TIFF format. This formats was used in many missions such as the Voyager ones.</p>
-                    </div>
-                </div>
-                <hr>
-
-                <div class="project" id="5">
-                    <h2 class="project-heading">Sugar Rocket. <span class="text-muted">With Arduino.</span></h2>
-
-                    <div class="project-content">
-                        <img src="../assets/images/Rocket.jpg" alt="rocket">
-                        <p class="lead">Sugar rocket made at the start of 2021. The parachute ejection system is made with a servo that is activated by the Arduino.</p>
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="project" id="6">
-                    <h2 class="project-heading">Web server. <span class="text-muted">With recycled parts.</span></h2>
-
-                    <div class="project-content">
-                        <img class="project-image img-fluid mx-auto" src="../assets/images/Server.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                        <p class="lead">Linux based web server running Docker on Fedora 38. Used to host this website as well as other services such as jellyfin or nginx.
-                        <a href="https://www.youtube.com/watch?v=1L8abM76bG0">Video</a>
-                    </p>          
-                    </div>
-                </div>
-                <hr>
-
-                <div class="project" id="7">
-                    <h2 class="project-heading">Robot. <span class="text-muted">3D printed.</span></h2>
-
-                    <div class="project-content">
-                        <img class="project-image img-fluid mx-auto" src="../assets/images/Robot.jpeg" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                        <p class="lead">3D printed robot controlled by an arduino and moved by 8 servo motors. Use sensor in order not to crash into walls.
-                            <a href="https://www.youtube.com/watch?v=h_jftYQMekc">Video</a>
-                        </p>
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="project" id="8">
-                    <h2 class="project-heading">Fi-156 "Storch". <span class="text-muted">RC airplane.</span></h2>
-
-                    <div class="project-content">
-                        <img class="project-image img-fluid mx-auto" src="../assets/images/Fi-156.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-                        <p class="lead">6-channel airplane built with foamboard and hot glue. It uses a 1000Kv motor, MG90S servos and it weights around 800 grams.
-                            <a href="https://www.youtube.com/watch?v=Ifakn9rkLtQ">Video</a>
-                        </p>
-                    </div>
-                </div>
-                <hr>
-
-            </div>
         </main>
 
 
@@ -137,11 +131,9 @@
         <footer class="container">
         
             <p class="float-right"><a href="#title">Back to top</a></p>
-            <p>&copy; 2026 Jaime Nazar Anchorena - <a>nam.jaime@gmail.com</a></p>
+            <p>&copy; 2022-20XX - Jaime Nazar Anchorena</a></p>
             
         </footer>
-
-        <script src="../assets/js/main.js"></script>
     </body>
 
 </html>
